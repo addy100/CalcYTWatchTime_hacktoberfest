@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-07-29T10:48:02.065065",
+  "time_stats": {
+    "seconds": 24848788,
+    "minutes": 414146.4666666667,
+    "hours": 6902.441111111111,
+    "days": 287.60171296296295,
+    "months": 9.5867237654321,
+    "years": 0.7879498985286657,
+    "formatted": "287 days, 14:26:28"
+  },
+  "video_stats": {
+    "total_videos": 45300,
+    "deleted_videos": 540,
+    "skipped_videos": 0,
+    "processed_videos": 44760
+  },
+  "parameters": {
+    "start_date": "2000-01-01T00:00:00Z",
+    "end_date": "",
+    "max_duration": 5400,
+    "batch_size": 50,
+    "history_file": "watch-history.json"
+  }
+}
