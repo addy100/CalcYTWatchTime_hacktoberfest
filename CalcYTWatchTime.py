@@ -53,7 +53,7 @@ class WatchTimeStats:
             "years": self.total_seconds / TimeConstants.SECONDS_IN_YEAR,
             "formatted": str(datetime.timedelta(seconds=int(self.total_seconds)))
         }
-
+## Superb  class of the YouTube watch time calculators
 class YouTubeWatchTimeCalculator:
     def __init__(self, config: Config):
         self.config = config
