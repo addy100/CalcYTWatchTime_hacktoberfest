@@ -66,19 +66,6 @@ python CalcYTWatchTime.py
 python CalcYTWatchTime.py -k "your_api_key_here"
 ```
 
-### Advanced Usage
-```bash
-# Custom parameters
-python CalcYTWatchTime.py \
-  -k "your_api_key" \
-  -f "path/to/watch-history.json" \
-  -s "2020-01-01T00:00:00Z" \
-  -d 7200 \
-  -b 25 \
-  -o results.json \
-  -v
-```
-
 ### Command Line Arguments
 
 | Argument | Short | Description | Default |
