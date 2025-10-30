@@ -227,6 +227,7 @@ class YouTubeWatchTimeCalculator:
             skipped_videos=skipped_count
         )
 
+## defining the functions are super important . We need to parse through the data and calculate total watch time
 def create_parser() -> argparse.ArgumentParser:
     """Create and configure argument parser."""
     parser = argparse.ArgumentParser(
