@@ -170,3 +170,25 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Disclaimer
 
 This script relies on the YouTube Data API, which may have usage limits, costs, or change behavior in the future. Use responsibly and in accordance with YouTube's Terms of Service and API usage policies.
+
+## More contributions enhanced
+
+Technical Documentation: CalcYTWatchTime - A YouTube Watch Time Analysis Tool
+The CalcYTWatchTime repository presents a Python-based utility engineered to perform comprehensive quantitative analysis of user watch time derived from a YouTube watch history JSON file, which is typically obtained via Google Takeout. This application leverages the YouTube Data API v3 to dynamically retrieve video duration metadata, enabling the calculation of total consumption time and subsequent statistical reporting.
+
+Key Functional Specifications
+The system is designed for robust and flexible execution, featuring both an interactive and a full Command-Line Interface (CLI) mode.
+
+Data Acquisition and Processing: The core function involves parsing the user's local watch-history.json file. It utilizes the YouTube Data API v3 to fetch the true duration for each video entry. Batch processing is implemented, configurable via the --batch-size argument (default: 50 videos), to optimize API usage.
+
+Time Calculation and Reporting: The output provides a comprehensive watch time analysis, presenting the total consumption time across multiple granularities: seconds, minutes, hours, days, months, and years. Example output formatting includes a precise breakdown (e.g., 45 days, 12:34:56).
+
+Statistical Robustness: The tool intelligently handles various data integrity challenges:
+
+Deleted and Unavailable Content: Videos that are no longer accessible (deleted, private, or restricted) are gracefully handled and tallied under specific metrics (Deleted videos, Skipped videos).
+
+Outlier Management: A configurable duration capping mechanism (--max-duration, default: 5400 seconds or 1.5 hours) is provided to filter out excessively long videos, such as livestreams, which could skew results.
+
+Configuration and Security: The application supports flexible configuration via both interactive prompts for novice users and CLI arguments for advanced operation. For secure handling of the mandatory YouTube Data API v3 key, environment variable support (YOUTUBE_API_KEY) is the recommended method.
+
+Operational Resilience: It includes built-in rate limiting to respect YouTube's API quotas and features robust error handling to manage malformed data, network interruptions, and API request failures. Real-time progress tracking is displayed during the video processing phase.
